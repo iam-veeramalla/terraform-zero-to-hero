@@ -18,6 +18,10 @@ Dive into AWS integration with Terraform. You'll learn how to set up your AWS cr
 
 Start writing actual Terraform code with a simple example. Learn about the basic structure of a Terraform configuration file and how to define resources using the HCL language.
 
+### Terraform Lifecycle
+
+Understand the lifecycle of terraform. What is terraform `init`, `plan` and `apply`.
+
 #### Launching an EC2 Instance
 
 Take your skills up a notch by provisioning an EC2 instance on AWS using Terraform. Explore attributes like instance type, AMI, and tags to customize your instance.
