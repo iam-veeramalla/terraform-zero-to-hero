@@ -24,7 +24,7 @@ When Terraform runs, it will first install the aws provider. Then, it will use t
 
 Here are some other examples of providers:
 
-- `azure` - for Azure
+- `azurerm` - for Azure
 - `google` - for Google Cloud Platform
 - `kubernetes` - for Kubernetes
 - `openstack` - for OpenStack

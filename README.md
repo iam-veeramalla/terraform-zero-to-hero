@@ -44,19 +44,19 @@ Discover the power of variables for dynamic configurations. Learn how to define,
 
 Elevate your configurations with conditional expressions, adding logic to your code. We'll introduce you to Terraform's built-in functions for tasks like string manipulation and calculations.
 
-#### Local Values and Data Sources
-
-Simplify complex expressions using local values. Dive into data sources and learn how to fetch data from existing resources or external systems, enhancing your configurations' flexibility.
-
 #### Debugging and Formatting Terraform Files
 
-Master the art of debugging Terraform configurations. We'll cover techniques using the terraform console command and delve into resource attribute examination. Plus, learn why proper formatting with terraform fmt is crucial.
+Master the art of debugging Terraform configurations.Plus, learn why proper formatting with terraform fmt is crucial.
 
 ## Day 3: Building Reusable Infrastructure with Modules
 
 #### Creating Modular Infrastructure with Terraform Modules
 
 Unlock the potential of reusability with Terraform modules. Understand how modules enable you to create shareable and organized infrastructure components.
+
+#### Local Values and Data Sources
+
+Simplify complex expressions using local values. Dive into data sources and learn how to fetch data from existing resources or external systems, enhancing your configurations' flexibility.
 
 #### Using Variables and Inputs with Modules
 
