@@ -6,9 +6,9 @@
 
 In this session, we'll introduce you to the fundamental concepts of Terraform and Infrastructure as Code (IaC). Learn why Terraform is crucial for managing infrastructure and how IaC streamlines provisioning.
 
-#### Installing Terraform on MacOS and Linux
+#### Installing Terraform on MacOS, Linux and Windows
 
-Get your hands dirty by installing Terraform on both MacOS and Linux. We'll guide you through the process with clear instructions and commands.
+Get your hands dirty by installing Terraform on both MacOS, Linux and Windows. We'll guide you through the process with clear instructions and commands.
 
 #### Setting up Terraform for AWS
 
@@ -17,6 +17,10 @@ Dive into AWS integration with Terraform. You'll learn how to set up your AWS cr
 #### Writing Your First Terraform Code
 
 Start writing actual Terraform code with a simple example. Learn about the basic structure of a Terraform configuration file and how to define resources using the HCL language.
+
+### Terraform Lifecycle
+
+Understand the lifecycle of terraform. What is terraform `init`, `plan` and `apply`.
 
 #### Launching an EC2 Instance
 
@@ -40,19 +44,19 @@ Discover the power of variables for dynamic configurations. Learn how to define,
 
 Elevate your configurations with conditional expressions, adding logic to your code. We'll introduce you to Terraform's built-in functions for tasks like string manipulation and calculations.
 
-#### Local Values and Data Sources
-
-Simplify complex expressions using local values. Dive into data sources and learn how to fetch data from existing resources or external systems, enhancing your configurations' flexibility.
-
 #### Debugging and Formatting Terraform Files
 
-Master the art of debugging Terraform configurations. We'll cover techniques using the terraform console command and delve into resource attribute examination. Plus, learn why proper formatting with terraform fmt is crucial.
+Master the art of debugging Terraform configurations.Plus, learn why proper formatting with terraform fmt is crucial.
 
 ## Day 3: Building Reusable Infrastructure with Modules
 
 #### Creating Modular Infrastructure with Terraform Modules
 
 Unlock the potential of reusability with Terraform modules. Understand how modules enable you to create shareable and organized infrastructure components.
+
+#### Local Values and Data Sources
+
+Simplify complex expressions using local values. Dive into data sources and learn how to fetch data from existing resources or external systems, enhancing your configurations' flexibility.
 
 #### Using Variables and Inputs with Modules
 
