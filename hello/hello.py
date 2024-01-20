@@ -1,4 +1,4 @@
-print("hello world")
-print("hello India")
-print("hello first")
-print("hello second")
+print("hello one")
+print("hello two")
+print("hello three")
+
