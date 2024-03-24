@@ -143,3 +143,25 @@ vault write -f auth/approle/role/my-approle/secret-id
    ```
 
 This command generates a Secret ID and provides it in the response. Save the Secret ID securely, as it will be used for Terraform authentication.
+
+
+
+Provider Configuration in vault :
+
+```bash
+provider "vault" {
+    address = "<>:8200"
+    skip_child_token = true
+
+    auth_login {
+      path = "auth/approle/login"
+      
+
+      parameters = {
+        role_id="<>"
+        secret_id="<>"
+      }
+    }
+  
+}
+  ```
