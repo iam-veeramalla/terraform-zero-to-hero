@@ -1,11 +1,13 @@
-variable "ami_value" {
-    description = "value for the ami"
+variable "ami_var" {
+    description = "ami(Amazon Machine Image) contains confiuration to launch a machine"
+  
 }
-
-variable "instance_type_value" {
-    description = "value for instance_type"
+variable "var_key_name" {
+  description = "key value pair to ssh into the aws instance"
 }
-
-variable "subnet_id_value" {
-    description = "value for the subnet_id"
+variable "varble_subnet_id" {
+  description = "instance will be placed in subnet of the vpc"
+}
+variable "variable_instance_type" {
+  description = "this define the size specifications of the ec2 instance"
 }
