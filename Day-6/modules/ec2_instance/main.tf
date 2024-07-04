@@ -1,16 +1,10 @@
 provider "aws" {
-    region = "us-east-1"
+  region = "ap-south-1"
 }
 
-variable "ami" {
-  description = "This is AMI for the instance"
-}
-
-variable "instance_type" {
-  description = "This is the instance type, for example: t2.micro"
-}
-
-resource "aws_instance" "example" {
-    ami = var.ami
-    instance_type = var.instance_type
+resource "aws_instance" "ec2_instance" {
+  ami = var.var_ami
+  instance_type = var.var_instance_type
+  key_name = var.var_key_name
+  subnet_id = var.var_subnet
 }
