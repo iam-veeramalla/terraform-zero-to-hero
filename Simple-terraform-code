@@ -5,15 +5,23 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-0e86e20dae9224db8" # Specify an appropriate AMI ID
   instance_type = "t2.micro"
-  key_name      = "jenkins"
-  user_data     = <<-EOF
-            #!/bin/bash
-            echo "Hello, World!" > /home/ec2-user/hello.txt
-            yum update -y
-            yum install -y httpd
-            systemctl start httpd
-            systemctl enable httpd
-            EOF
+  key_name      = "Jenkins"
+  user_data = <<-EOF
+              #!/bin/bash
+              # Update the package list
+              apt-get update -y
+
+              # Install Nginx
+              apt-get install -y nginx
+
+              # Create a custom index.html file
+              echo "<html><body><h1>Hello from Terraform and Nginx on Ubuntu!</h1></body></html>" > /var/www/html/index.html
+
+              # Start and enable Nginx service
+              systemctl start nginx
+              systemctl enable nginx
+              EOF
+
   tags = {
     Name = "My-first-Instance" # Replace this with your desired name
   }
