@@ -1,0 +1,32 @@
+provider "aws" {
+  region = "us-east-1" # Set your desired AWS region
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0e86e20dae9224db8" # Specify an appropriate AMI ID
+  instance_type = "t2.micro"
+  key_name      = "jenkins"
+  user_data     = <<-EOF
+            #!/bin/bash
+            echo "Hello, World!" > /home/ec2-user/hello.txt
+            yum update -y
+            yum install -y httpd
+            systemctl start httpd
+            systemctl enable httpd
+            EOF
+  tags = {
+    Name = "My-first-Instance" # Replace this with your desired name
+  }
+
+
+}
+
+output "instance_id" {
+  value       = aws_instance.example.id
+  description = "The ID of the EC2 instance"
+}
+
+output "instance_public_ip" {
+  value       = aws_instance.example.public_ip
+  description = "The public IP address of the EC2 instance"
+}
