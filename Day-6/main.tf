@@ -2,11 +2,11 @@ provider "aws" {
   region = "us-east-1"
 }
 
-variable "ami" {
+variable "ami_id" {
   description = "value"
 }
 
-variable "instance_type" {
+variable "instance_of_type" {
   description = "value"
   type = map(string)
 
