@@ -24,11 +24,11 @@ resource "aws_instance" "example" {
   monitoring                           = false
   placement_group                      = null
   placement_partition_number           = 0
-  private_ip                           = "172.31.94.226"
+  private_ip                           = "xxxxxxxxxxxxxx"
   secondary_private_ips                = []
   security_groups                      = ["launch-wizard-3"]
   source_dest_check                    = true
-  subnet_id                            = "subnet-029f1a0c02ebb21a2"
+  subnet_id                            = "xxxxxxxxxxxxxxxxxx"
   tags = {
     Name = "importinstance"
   }
@@ -40,7 +40,7 @@ resource "aws_instance" "example" {
   user_data_base64            = null
   user_data_replace_on_change = null
   volume_tags                 = null
-  vpc_security_group_ids      = ["sg-0284896067c2ad780"]
+  vpc_security_group_ids      = ["xxxxxxxxxxxxxxx"]
   capacity_reservation_specification {
     capacity_reservation_preference = "open"
   }
