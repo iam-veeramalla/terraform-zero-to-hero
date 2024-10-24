@@ -97,12 +97,10 @@ resource "aws_instance" "server" {
     inline = [
       "echo 'Hello from the remote instance'",
       "sudo apt update -y",  # Update package lists (for ubuntu)
-      "sudo apt install apache2",  # Example package installation
-      "sudo ufw allow 'Apache'",
+      "nohup sudo apt install apache2 && sudo ufw allow 'apache'",  # Example package installation
       "cd /home/ubuntu",
       "unzip redbull.zip /var/www/html"
-      "cd /var/www/html/ ///////////////pending
-      "sudo python3 app.py &",
+      "sudo systemctl start apache2"
     ]
   }
 }
