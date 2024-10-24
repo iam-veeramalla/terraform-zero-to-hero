@@ -89,8 +89,8 @@ resource "aws_instance" "server" {
 
   # File provisioner to copy a file from local to the remote EC2 instance
   provisioner "file" {
-    source      = "redbull_studios.zip"  # Replace with the path to your local file
-    destination = "/home/ubuntu/redbull_studios.zip"  # Replace with the path on the remote instance
+    source      = "redbull.zip"  # Replace with the path to your local file
+    destination = "/home/ubuntu/redbull.zip"  # Replace with the path on the remote instance
   }
 
   provisioner "remote-exec" {
@@ -100,7 +100,7 @@ resource "aws_instance" "server" {
       "sudo apt install apache2",  # Example package installation
       "sudo ufw allow 'Apache'",
       "cd /home/ubuntu",
-      "unzip redbull_studios.zip /var/www/html"
+      "unzip redbull.zip /var/www/html"
       "cd /var/www/html/ ///////////////pending
       "sudo python3 app.py &",
     ]
