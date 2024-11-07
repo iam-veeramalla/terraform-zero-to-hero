@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "us-east-1"  # Set your desired AWS region by Ravi2, clean
+    region = "us-east-1"  # Set your desired AWS region by Ravi2, clean from VS code
 }
 
 resource "aws_instance" "example" {
