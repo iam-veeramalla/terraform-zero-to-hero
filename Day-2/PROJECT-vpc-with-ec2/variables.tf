@@ -3,5 +3,5 @@ variable "cidr" {
 }
 variable "ami_id" {
   description = "EC2 AMI Id"
-  type = String
+  type = string
 }
