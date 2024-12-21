@@ -50,17 +50,17 @@ output "list_length" {
 
 ```hcl
 variable "keys" {
-  type    = list
+  type    = list(string)
   default = ["name", "age"]
 }
 
 variable "values" {
-  type    = list
+  type    = list(any)
   default = ["Alice", 30]
 }
 
 output "my_map" {
-  value = map(var.keys, var.values) # Returns {"name" = "Alice", "age" = 30}
+  value = { for i, key in var.keys : key => var.values[i] } # Returns {"name" = "Alice", "age" = 30}
 }
 ```
 
