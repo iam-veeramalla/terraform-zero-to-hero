@@ -1,24 +1,31 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 variable "ami" {
-  description = "value"
+  description = "value of AMI Id"
 }
 
 variable "instance_type" {
-  description = "value"
-  type = map(string)
-
+  description = "value of ec2 instance type"
+  type        = map(string)
   default = {
-    "dev" = "t2.micro"
-    "stage" = "t2.medium"
-    "prod" = "t2.xlarge"
+    "dev"   = "t2.small"
+    "stage" = "t2.xlarge"
+    "prod"  = "t2.medium"
   }
 }
 
 module "ec2_instance" {
-  source = "./modules/ec2_instance"
-  ami = var.ami
+  source        = "./modules/ec2-instance"
+  ami           = var.ami
   instance_type = lookup(var.instance_type, terraform.workspace, "t2.micro")
+}
+
+module "s3_bucket" {
+  source = "./modules/s3"
+}
+
+module "dynamodb_table" {
+  source = "./modules/dynamodb"
 }
