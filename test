@@ -1,2 +1,6 @@
 first commit from GitHub web
+<<<<<<< Updated upstream
 second commit from GitHub web
+=======
+second commit from cli
+>>>>>>> Stashed changes
