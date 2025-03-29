@@ -33,6 +33,8 @@ terraform apply
 
 Terraform will display a plan of the changes it's going to make. Review the plan and type "yes" when prompted to apply it.
 
+## Terraform plan - helps you show the plan, outer case how your resources will look like just a blueprint.
+
 ## Verify Resources
 
 After Terraform completes the provisioning process, you can verify the resources created in the AWS Management Console or by using AWS CLI commands.
