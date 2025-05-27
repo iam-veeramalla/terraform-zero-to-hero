@@ -7,6 +7,7 @@ To configure AWS credentials and set up Terraform to work with AWS, you'll need 
 Make sure you have the AWS CLI installed on your machine. You can download and install it from the [AWS CLI download page](https://aws.amazon.com/cli/).
 
 2. **Create an AWS IAM User**:
+kjbdcljasdh
 
 To interact with AWS programmatically, you should create an IAM (Identity and Access Management) user with appropriate permissions. Here's how to create one:
 
