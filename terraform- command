@@ -1,0 +1,103 @@
+#Terraform Commands:
+Terraform commands used on daily basis:#Repost
+1. terraform init:
+- Initializes a working directory containing Terraform configuration files.
+
+2. terraform plan:
+- Generates an execution plan, outlining actions Terraform will take.
+
+3. terraform apply:
+- Applies the changes described in the Terraform configuration.
+
+4. terraform destroy:
+- Destroys all resources described in the Terraform configuration.
+
+5. terraform validate:
+- Checks the syntax and validity of Terraform configuration files.
+
+6. terraform refresh:
+- Updates the state file against real resources in the provider.
+
+7. terraform output:
+- Displays the output values from the Terraform state.
+
+8. terraform state list:
+- Lists resources within the Terraform state.
+
+9. terraform show:
+- Displays a human -readable output of the current state or a specific resource's state.
+
+10. terraform import:
+- Imports existing infrastructure into Terraform state.
+
+11. terraform fmt:
+- Rewrites Terraform configuration files to a canonical format.
+
+12. terraform graph:
+- Generates a visual representation of the Terraform dependency graph.
+
+13. terraform providers:
+- Prints a tree of the providers used in the configuration.
+
+14. terraform workspace list:
+- Lists available workspaces.
+
+15. terraform workspace select:
+- Switches to another existing workspace.
+
+16. terraform workspace new:
+- Creates a new workspace.
+
+17. terraform workspace delete:
+- Deletes an existing workspace.
+
+18. terraform output:
+- Retrieves output values from a module.
+
+19. terraform state mv:
+- Moves an item in the state.
+
+20. terraform state pull:
+- Pulls the state from a remote backend.
+
+21. terraform state push:
+- Pushes the state to a remote backend.
+
+22. terraform state rm:
+- Removes items from the state.
+
+23. terraform taint:
+- Manually marks a resource for recreation.
+
+24. terraform untaint:
+- Removes the 'tainted' state from a resource.
+
+25. terraform login:
+- Saves credentials for Terraform Cloud.
+
+26. terraform logout:
+- Removes credentials for Terraform Cloud.
+
+27. terraform force -unlock:
+- Releases a locked state.
+
+28. terraform import:
+- Imports existing infrastructure into your Terraform state.
+
+29. terraform plan -out:
+- Saves the generated plan to a file.
+
+30. terraform apply -auto -approve:
+- Automatically applies changes without requiring approval.
+
+31. terraform apply -target=resource:
+- Applies changes only to a specific resource.
+
+32. terraform destroy -target=resource:
+- Destroys a specific resource.
+
+33. terraform apply -var="key=value":
+- Sets a variable's value directly in the command line.
+
+34. terraform apply -var -file=filename.tfvars:
+- Specifies a file containing variable definitions.
