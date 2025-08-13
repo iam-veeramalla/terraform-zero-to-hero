@@ -129,7 +129,7 @@ After creating the AppRole, you need to generate a Role ID and Secret ID pair. T
 You can retrieve the Role ID using the Vault CLI:
 
 ```bash
-vault read auth/approle/role/my-approle/role-id
+vault read auth/approle/role/terraform/role-id
 ```
 
 Save the Role ID for use in your Terraform configuration.
