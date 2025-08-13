@@ -16,7 +16,7 @@ variable "list2" {
 }
 
 output "combined_list" {
-  value = concat(var.list1, var.list2)
+  value = concat(var.list1, var.list2) # Returns ["a","b","c","d"]
 }
 ```
 
