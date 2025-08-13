@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-0e86e20dae9224db8" # Specify an appropriate AMI ID
   instance_type = "t2.micro"
-  key_name      = "Terraform"
+  key_name      = "Jenkins"
   user_data = <<-EOF
               #!/bin/bash
               # Update the package list
@@ -37,10 +37,4 @@ output "instance_id" {
 output "instance_public_ip" {
   value       = aws_instance.example.public_ip
   description = "The public IP address of the EC2 instance"
-}
-
-output "instance_type" {
-    value = aws_instance.example.instance_type
-    description = "This is going to give us what type of CPU Is"
-  
 }
