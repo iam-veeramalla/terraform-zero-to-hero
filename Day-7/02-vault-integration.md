@@ -139,7 +139,7 @@ Save the Role ID for use in your Terraform configuration.
 To generate a Secret ID, you can use the following command:
 
 ```bash
-vault write -f auth/approle/role/my-approle/secret-id
+vault write -f auth/approle/role/terraform/secret-id
    ```
 
 This command generates a Secret ID and provides it in the response. Save the Secret ID securely, as it will be used for Terraform authentication.
